@@ -21,3 +21,9 @@ perfil(seguranca_da_informacao, conhecimento_de_redes, 3).
 perfil(redes_e_infraestrutura, administracao_de_sistemas, 5).
 perfil(redes_e_infraestrutura, conhecimento_de_redes, 4).
 perfil(redes_e_infraestrutura, pensamento_logico, 3).
+
+pergunta(1, 'É bom com matemática e/ou estatística?', matematica_estatistica).
+pergunta(2, 'Gosta de programar em alguma linguagem?', programacao).
+pergunta(3, 'Tem facilidade em ler informações e tirar conclusões com base nelas?', pensamento_logico).
+pergunta(4, 'Você consegue imaginar como um sistema funciona e manipular mentalmente?', logica).
+pergunta(5, 'gosta de criar soluções ou ideias novas e diferentes das outras pessoas?', criatividade).
