@@ -24,11 +24,16 @@ perfil(redes_e_infraestrutura, pensamento_logico, 3).
 
 pergunta(1, 'É bom com matemática e/ou estatística?', matematica_estatistica).
 pergunta(2, 'Gosta de programar em alguma linguagem?', programacao).
-pergunta(3, 'Tem facilidade em ler informações e tirar conclusões com base nelas?', pensamento_logico).
+pergunta(3, 'Tem facilidade em organizar informações?', pensamento_logico).
 pergunta(4, 'Você consegue imaginar como um sistema funciona e manipular mentalmente?', logica).
 pergunta(5, 'gosta de criar soluções ou ideias novas e diferentes das outras pessoas?', criatividade).
 pergunta(6, 'Se interessa pela aparencia das suas coisas?', design_virtual).
 pergunta(7, 'Gosta de aprender a como proteger sistemas e dados?', analise_de_riscos).
 pergunta(8, 'Tem conhecimento de redes de computadores?', conhecimento_de_redes).
 pergunta(9, 'É bom com administração e com sistemas e servidores?', administracao_de_sistemas).
-pergunta(10, 'Gosta de Big Data?', curiosidade_dados).
+pergunta(10, 'Quando le muitos dados tem facilidade em entende-los?', pensamento_logico).
+pergunta(11, 'Se interessa por IA e machine learning?', programacao).
+pergunta(12, 'Tem facilidade em encontrar padrões?', logica).
+pergunta(13, 'Entende como um sistema funciona?', administracao_de_sistemas).
+pergunta(14, 'Tem um bom conhecimento estético e conhecimento na psicologia das cores?', design_virtual).
+pergunta(15, 'tem conhecimento de protocolos como tcp/ip?', conhecimento_de_redes).
