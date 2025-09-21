@@ -3,3 +3,7 @@
 calcula_pontuacao(Trilha, Pontuacao) :-
     findall(Peso, (perfil(Trilha, Caracteristica, Peso), tem_caracteristica(Caracteristica)), Pesos),
     soma_lista(Pesos, Pontuacao).
+
+tem_caracteristica(Caracteristica) :-
+    pergunta(IdPergunta, _, Caracteristica),
+    resposta(IdPergunta, s).
