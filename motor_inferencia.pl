@@ -17,3 +17,8 @@ recomenda(ResultadosOrdenados) :-
     findall(Trilha, trilha(Trilha, _), Trilhas),
     calcula_todas_pontuacoes(Trilhas, Resultados),
     ordena_resultados(Resultados, ResultadosOrdenados).
+
+calcula_todas_pontuacoes([], []).
+calcula_todas_pontuacoes([Trilha|Resto], [Pontuacao-Trilha|Resultados]) :-
+    calcula_pontuacao(Trilha, Pontuacao),
+    calcula_todas_pontuacoes(Resto, Resultados).
