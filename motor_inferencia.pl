@@ -29,3 +29,9 @@ ordena_resultados(Resultados, Ordenados) :-
 compara_pontuacao(>, A-_, B-_) :- A > B.
 compara_pontuacao(<, A-_, B-_) :- A < B.
 compara_pontuacao(=, _, _).
+
+exibe_resultados([]).
+exibe_resultados([Pontuacao-Trilha|Resto]) :-
+    write('Trilha: '), write(Trilha),
+    write(' - Pontuação: '), write(Pontuacao), nl,
+    exibe_resultados(Resto).
