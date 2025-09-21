@@ -16,5 +16,9 @@ Este trabalho desenvolve um sistema especialista em Prolog que ajuda estudantes 
 
 ## Estrutura do Projeto
 -`base_conhecimento.pl` → Contém trilhas, características de perfil e perguntas.
+-`motor_inferencia.pl` → regras para calcular compatibilidade.
+-`interface_usuario.pl` → fluxo principal e interação com usuário.
 
 ## Como Executar
+
+1. Abrir SWISH: [https://swish.swi-prolog.org/](https://swish.swi-prolog.org/) 
