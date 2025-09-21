@@ -1,1 +1,1 @@
-#interface de usuário feito por: Alan Filipe
+%interface de usuário feito por: Alan Filipe
