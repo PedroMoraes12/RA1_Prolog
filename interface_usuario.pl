@@ -12,3 +12,12 @@ write('=========================================='), nl,
     recomenda(Resultados),
     nl, write('===== RESULTADOS ====='), nl,
     exibe_resultados(Resultados).
+
+    faz_perguntas :-
+    pergunta(Id, Texto, _),
+    format('~w ', [Texto]),
+    read(Resp),
+    (Resp == s ; Resp == n),          
+    assertz(resposta(Id, Resp)),
+    
+    
