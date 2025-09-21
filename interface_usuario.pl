@@ -17,7 +17,8 @@ write('=========================================='), nl,
     pergunta(Id, Texto, _),
     format('~w ', [Texto]),
     read(Resp),
-    (Resp == s ; Resp == n),          
+    (Resp == s ; Resp == n),      % só vai aceitar 's' ou 'n'    
     assertz(resposta(Id, Resp)),
-    
+    fail.                            % força voltar e perguntar a próxima
+faz_perguntas.                        % encerra quando não houver mais
     
