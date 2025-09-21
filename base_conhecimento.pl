@@ -27,3 +27,8 @@ pergunta(2, 'Gosta de programar em alguma linguagem?', programacao).
 pergunta(3, 'Tem facilidade em ler informações e tirar conclusões com base nelas?', pensamento_logico).
 pergunta(4, 'Você consegue imaginar como um sistema funciona e manipular mentalmente?', logica).
 pergunta(5, 'gosta de criar soluções ou ideias novas e diferentes das outras pessoas?', criatividade).
+pergunta(6, 'Se interessa pela aparencia das suas coisas?', design_virtual).
+pergunta(7, 'Gosta de aprender a como proteger sistemas e dados?', analise_de_riscos).
+pergunta(8, 'Tem conhecimento de redes de computadores?', conhecimento_de_redes).
+pergunta(9, 'É bom com administração e com sistemas e servidores?', administracao_de_sistemas).
+pergunta(10, 'Gosta de Big Data?', curiosidade_dados).
