@@ -11,12 +11,12 @@ Iniciar :-
     nl, write('===== RESULTADOS ====='), nl,
     exibe_resultados(Resultados).
 
-    faz_perguntas :-
+faz_perguntas :-
     pergunta(Id, Texto, _),
     format('~w ', [Texto]),
     read(Resp),
     (Resp == s ; Resp == n),      % só vai aceitar 's' ou 'n'    
     assertz(resposta(Id, Resp)),
     fail.                            % força voltar e perguntar a próxima
-faz_perguntas.                        % encerra quando não houver mais
+    faz_perguntas.                        % encerra quando não houver mais
     
