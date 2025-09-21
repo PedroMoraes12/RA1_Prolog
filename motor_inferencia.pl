@@ -12,3 +12,8 @@ soma_lista([], 0).
 soma_lista([H|T], Soma) :-
     soma_lista(T, SomaResto),
     Soma is H + SomaResto.
+
+recomenda(ResultadosOrdenados) :-
+    findall(Trilha, trilha(Trilha, _), Trilhas),
+    calcula_todas_pontuacoes(Trilhas, Resultados),
+    ordena_resultados(Resultados, ResultadosOrdenados).
