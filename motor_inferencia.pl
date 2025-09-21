@@ -22,3 +22,10 @@ calcula_todas_pontuacoes([], []).
 calcula_todas_pontuacoes([Trilha|Resto], [Pontuacao-Trilha|Resultados]) :-
     calcula_pontuacao(Trilha, Pontuacao),
     calcula_todas_pontuacoes(Resto, Resultados).
+
+ordena_resultados(Resultados, Ordenados) :-
+    predsort(compara_pontuacao, Resultados, Ordenados).
+
+compara_pontuacao(>, A-_, B-_) :- A > B.
+compara_pontuacao(<, A-_, B-_) :- A < B.
+compara_pontuacao(=, _, _).
