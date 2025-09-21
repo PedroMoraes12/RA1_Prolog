@@ -46,3 +46,8 @@ teste_perfil_redes_infra :-
     assertz(resposta(9, s)), % Admin sistemas
     recomenda(Resultados),
     exibe_resultados(Resultados).
+
+testa_tudo :-
+    teste_perfil_matematica_programacao, nl,
+    teste_perfil_design_criatividade, nl,
+    teste_perfil_redes_infra.
