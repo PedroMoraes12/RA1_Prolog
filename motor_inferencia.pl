@@ -7,3 +7,8 @@ calcula_pontuacao(Trilha, Pontuacao) :-
 tem_caracteristica(Caracteristica) :-
     pergunta(IdPergunta, _, Caracteristica),
     resposta(IdPergunta, s).
+
+soma_lista([], 0).
+soma_lista([H|T], Soma) :-
+    soma_lista(T, SomaResto),
+    Soma is H + SomaResto.
