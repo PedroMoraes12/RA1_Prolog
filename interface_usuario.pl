@@ -2,7 +2,7 @@
 
 :- dynamic resposta/2
 
-Iniciar :-
+iniciar :-
     write('SISTEMA ESPECIALISTA - RECOMENDADOR DE TRILHAS'), nl,
     write('Responda as perguntas abaixo com s (sim) ou n (nao).'), nl, nl,
     retractall(resposta(_, _)), % limpa respostas anteriores
