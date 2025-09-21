@@ -31,3 +31,18 @@ teste_perfil_design_criatividade :-
     assertz(resposta(9, n)), % Admin sistemas
     recomenda(Resultados),
     exibe_resultados(Resultados).
+
+teste_perfil_redes_infra :-
+    write('=== PERFIL: Redes + Infraestrutura ==='), nl,
+    retractall(resposta(_, _)),
+    assertz(resposta(1, n)), % Matemática
+    assertz(resposta(2, n)), % Programação
+    assertz(resposta(3, s)), % Pensamento lógico
+    assertz(resposta(4, n)), % Lógica
+    assertz(resposta(5, n)), % Criatividade
+    assertz(resposta(6, n)), % Design
+    assertz(resposta(7, s)), % Análise de riscos
+    assertz(resposta(8, s)), % Redes
+    assertz(resposta(9, s)), % Admin sistemas
+    recomenda(Resultados),
+    exibe_resultados(Resultados).
