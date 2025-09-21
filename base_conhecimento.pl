@@ -1,4 +1,4 @@
-#base de conhecimento feito por: Lucas Ferraz
+%base de conhecimento feito por: Lucas Ferraz
 
 trilha(ciencia_de_dados, 'Analise de dados e estatistica aplicada.').
 trilha(inteligencia_artificial, 'Aprendizado de maquinas e raciocinio automatizado.').
