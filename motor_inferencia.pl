@@ -1,1 +1,1 @@
-#motor de inferência feito por: Pedro Moraes
+# motor de inferência feito por: Pedro Moraes
