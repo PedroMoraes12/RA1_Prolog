@@ -1,1 +1,3 @@
-%interface de usuário feito por: Alan Filipe
+%INTERFACE DE USUÁRIO - Alan Filipe
+
+:- dynamic resposta/2
