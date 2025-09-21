@@ -1,5 +1,5 @@
-% MOTOR DE INFERÊNCIA - Implementado por Pedro Henrique Moraes
+% MOTOR DE INFERÊNCIA - Pedro Henrique Moreaes
 
-% Predicado principal que recomenda trilhas para um aluno
-% recomenda(-TrilhasRecomendadas)
-% Retorna lista de pares Pontuacao-Trilha ordenados por pontuação
+calcula_pontuacao(Trilha, Pontuacao) :-
+    findall(Peso, (perfil(Trilha, Caracteristica, Peso), tem_caracteristica(Caracteristica)), Pesos),
+    soma_lista(Pesos, Pontuacao).
