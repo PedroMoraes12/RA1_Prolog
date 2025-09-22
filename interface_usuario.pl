@@ -8,7 +8,7 @@ iniciar :-
     retractall(resposta(_, _)), 
     faz_perguntas,
     recomenda(Resultados),
-    nl, write('===== RESULTADOS ====='), nl,
+    nl, write('RESULTADOS:'), nl,
     exibe_resultados(Resultados).
 
 faz_perguntas :-
