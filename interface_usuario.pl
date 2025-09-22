@@ -11,8 +11,10 @@ iniciar :-
     faz_perguntas,
     recomenda(Resultados),
     nl, write('RESULTADOS:'), nl,
-    exibe_resultados(Resultados).
+    exibe_resultados(Resultados).   % mostra as recomendações 
 
+    
+% faz as perguntas e armazena as respostas
 faz_perguntas :-
     pergunta(Id, Texto, _),
     format('~w ', [Texto]),
