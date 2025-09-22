@@ -18,7 +18,10 @@ Este trabalho desenvolve um sistema especialista em Prolog que ajuda estudantes 
 - `base_conhecimento.pl` → Contém trilhas, características de perfil e perguntas.
 - `motor_inferencia.pl` → regras para calcular compatibilidade.
 - `interface_usuario.pl` → fluxo principal e interação com usuário.
-- `perfil_X.pl` → arquivo de teste com respostas simuladas de alunos.
+- `testa_tudo.pl` → arquivo que testa os 3 perfis juntos.
+- `teste_perfil_design_criatividade.pl` → respostas simuladas para um perfil focado em matemática e programação.
+- `teste_perfil_matematica_programacao.pl` → respostas simuladas para um perfil focado em design e criatividade.
+- `teste_perfil_redes_infra.pl` → respostas simuladas para um perfil focado em redes e infraestrutura.
 
 ## Como Executar
 ## **Modo interativo.**
@@ -38,8 +41,7 @@ Permitindo testes de perfis automáticos sem a necessidade de responder manualme
 **Perfis disponíveis:**
    - `teste_perfil_matematica_programacao/0` → Perfil focado em Matemática e Programação
    - `teste_perfil_design_criatividade/0` → Perfil focado em Design e Criatividade
-   - `teste_perfil_redes_infra/0` → Perfil focado em Redes e Infraestrutura
-   - `testa_tudo/0` → Arquivo que testa os 3 perfis juntos
+   - `teste_perfil_redes_infra/0` → Perfil focado em Redes e Infraestrutura  
 
 1. Copie o conteúdo de `teste_perfil_matematica_programacao/0` tambem para o Swish.
 2. Copie o conteúdo de `teste_perfil_design_criatividade/0` tambem para o Swish
