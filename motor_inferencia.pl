@@ -24,11 +24,13 @@ calcula_todas_pontuacoes([Trilha|Resto], [Pontuacao-Trilha|Resultados]) :-
     calcula_todas_pontuacoes(Resto, Resultados).
 
 ordena_resultados(Resultados, Ordenados) :-
-    predsort(compara_pontuacao, Resultados, Ordenados).
+    inverter_pares(Resultados, Invertidos),
+    keysort(Invertidos, OrdenadosInvertidos),
+    inverter_pares(OrdenadosInvertidos, Ordenados).
 
-compara_pontuacao(>, A-_, B-_) :- A > B.
-compara_pontuacao(<, A-_, B-_) :- A < B.
-compara_pontuacao(=, _, _).
+inverter_pares([], []).
+inverter_pares([Pontuacao-Trilha|Resto], [Trilha-Pontuacao|Invertidos]) :-
+    inverter_pares(Resto, Invertidos).
 
 exibe_resultados([]).
 exibe_resultados([Pontuacao-Trilha|Resto]) :-
