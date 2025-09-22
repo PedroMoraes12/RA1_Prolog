@@ -1,4 +1,4 @@
-% PERFIL TESTE 1 - Pedro Henrique Moreaes
+% PERFIL TESTE 1 - Pedro Henrique Moraes
 % Perfil focado em Matemática e Programação
 
 :- dynamic resposta/2.
