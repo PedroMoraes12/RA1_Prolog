@@ -19,8 +19,8 @@ Este trabalho desenvolve um sistema especialista em Prolog que ajuda estudantes 
 - `motor_inferencia.pl` → regras para calcular compatibilidade.
 - `interface_usuario.pl` → fluxo principal e interação com usuário.
 - `testa_tudo.pl` → arquivo que testa os 3 perfis juntos.
-- `teste_perfil_design_criatividade.pl` → respostas simuladas para um perfil focado em matemática e programação.
-- `teste_perfil_matematica_programacao.pl` → respostas simuladas para um perfil focado em design e criatividade.
+- `teste_perfil_design_criatividade.pl` → respostas simuladas para um perfil focado em  design e criatividade.
+- `teste_perfil_matematica_programacao.pl` → respostas simuladas para um perfil focado em matemática e programação.
 - `teste_perfil_redes_infra.pl` → respostas simuladas para um perfil focado em redes e infraestrutura.
 
 ## Como Executar
