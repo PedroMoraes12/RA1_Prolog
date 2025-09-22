@@ -1,5 +1,7 @@
 %base de conhecimento feito por: Lucas Ferraz
 
+%é a parte responsavel por guardar os dados de todo o codigo usando os fatos trilha, perfil e pergunta
+
 %trilhas disponiveis e a sua descrição para consultas 
 
 trilha(ciencia_de_dados, 'Analise de dados e estatistica aplicada.').
