@@ -4,36 +4,39 @@ tem_caracteristica(Caracteristica) :-
     pergunta(IdPergunta, _, Caracteristica),
     resposta(IdPergunta, s).
 
-soma_lista([], 0).
-soma_lista([H|T], Soma) :-
-    soma_lista(T, SomaResto),
-    Soma is H + SomaResto.
+soma_lista_pesos([], 0).
+soma_lista_pesos([Peso-_|T], Soma) :-
+    soma_lista_pesos(T, SomaResto),
+    Soma is Peso + SomaResto.
 
-calcula_pontuacao(Trilha, Pontuacao) :-
-    findall(Peso, (perfil(Trilha, Caracteristica, Peso), tem_caracteristica(Caracteristica)), Pesos),
-    soma_lista(Pesos, Pontuacao).
+calcula_pontuacao(Trilha, Pontuacao, PerguntasComPeso) :-
+    findall(Peso-PerguntaTexto,
+            (perfil(Trilha, Carac, Peso),
+             tem_caracteristica(Carac),
+             pergunta(_, PerguntaTexto, Carac)),
+            Lista),
+    soma_lista_pesos(Lista, Pontuacao),
+    PerguntasComPeso = Lista.
 
 calcula_todas_pontuacoes([], []).
-calcula_todas_pontuacoes([Trilha|Resto], [Pontuacao-Trilha|Resultado]) :-
-    calcula_pontuacao(Trilha, Pontuacao),
+calcula_todas_pontuacoes([Trilha|Resto], [Pontuacao-Trilha-Perguntas|Resultado]) :-
+    calcula_pontuacao(Trilha, Pontuacao, Perguntas),
     calcula_todas_pontuacoes(Resto, Resultado).
 
-inverter_pares([], []).
-inverter_pares([Pontuacao-Trilha|Resto], [Trilha-Pontuacao|Invertido]) :-
-    inverter_pares(Resto, Invertido).
-
-ordena_resultados(Resultados, Ordenados) :-
-    inverter_pares(Resultados, Invertidos),
-    keysort(Invertidos, OrdenadosInvertidos),
-    inverter_pares(OrdenadosInvertidos, Ordenados).
-
-recomenda(ResultadosOrdenados) :-
-    findall(Trilha, trilha(Trilha, _), Trilhas),
-    calcula_todas_pontuacoes(Trilhas, Resultados),
-    ordena_resultados(Resultados, ResultadosOrdenados).
+mostra_perguntas_com_peso([]).
+mostra_perguntas_com_peso([Peso-P|R]) :-
+    write(' - '), write(P), write(' (Peso: '), write(Peso), write(')'), nl,
+    mostra_perguntas_com_peso(R).
 
 exibe_resultados([]).
-exibe_resultados([Pontuacao-Trilha|Resto]) :-
+exibe_resultados([Pontuacao-Trilha-Perguntas|Resto]) :-
     write('Trilha: '), write(Trilha),
     write(' - Pontuação: '), write(Pontuacao), nl,
+    write('Contribuíram:'), nl,
+    mostra_perguntas_com_peso(Perguntas),
+    nl,
     exibe_resultados(Resto).
+
+recomenda(Resultados) :-
+    findall(Trilha, trilha(Trilha, _), Trilhas),
+    calcula_todas_pontuacoes(Trilhas, Resultados).
