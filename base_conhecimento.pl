@@ -22,12 +22,12 @@ perfil(redes_e_infraestrutura, administracao_de_sistemas, 5).
 perfil(redes_e_infraestrutura, conhecimento_de_redes, 4).
 perfil(redes_e_infraestrutura, pensamento_logico, 3).
 
-pergunta(1, 'É bom com matemática e/ou estatística?', matematica_estatistica).
-pergunta(2, 'Gosta de programar em alguma linguagem?', programacao).
-pergunta(3, 'Tem facilidade em organizar informações?', pensamento_logico).
+pergunta(1, 'Se da bem com matemática e/ou estatística?', matematica_estatistica).
+pergunta(2, 'Gosta de programar em alguma linguagem e possui pensamento crítico?', programacao).
+pergunta(3, 'Tem facilidade em organizar informações e pensamentos além de resolver problemas de forma "metódica"?', pensamento_logico).
 pergunta(4, 'gosta de criar soluções ou ideias novas e diferentes das outras pessoas?', criatividade).
-pergunta(5, 'Gosta de aprender a como proteger sistemas e dados?', analise_de_riscos).
-pergunta(6, 'É bom com administração e com sistemas e servidores?', administracao_de_sistemas).
-pergunta(7, 'Tem facilidade em encontrar padrões?', logica).
-pergunta(8, 'Tem um bom conhecimento estético e conhecimento na psicologia das cores?', design_virtual).
-pergunta(9, 'tem conhecimento de protocolos como tcp/ip?', conhecimento_de_redes).
+pergunta(5, 'Gosta de aprender a como proteger sistemas e dados e sabe avaliar bem consequências de riscos?', analise_de_riscos).
+pergunta(6, 'É bom com administração e com sistemas e servidores e tem conhecimentos em SO como windows e linux?', administracao_de_sistemas).
+pergunta(7, 'Tem facilidade em encontrar padrões e deduzir soluções?', logica).
+pergunta(8, 'Tem um bom conhecimento estético e conhecimento na psicologia das cores e principios do design?', design_virtual).
+pergunta(9, 'tem conhecimento de protocolos como tcp/ip e conhece commandos como ping, traceroute e etc?', conhecimento_de_redes).
