@@ -39,7 +39,7 @@ O sistema possui 3 arquivos de teste separados, cada um representando um perfil 
 E 1 arquivo que testa todos juntos.
 Permitindo testes de perfis automáticos sem a necessidade de responder manualmente.
 **Perfis disponíveis:**
-   - `teste_perfil_matematica_programacao/0` → Perfil focado em Matemática e Programação
+   - `perfil_1.pl/0` → Perfil focado em Matemática e Programação
    - `teste_perfil_design_criatividade/0` → Perfil focado em Design e Criatividade
    - `teste_perfil_redes_infra/0` → Perfil focado em Redes e Infraestrutura  
 
