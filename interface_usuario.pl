@@ -1,6 +1,6 @@
 %INTERFACE DE USUÁRIO - Alan Filipe
 
-:- dynamic resposta/2.
+:- dynamic resposta/2.     % permite adicionar ou remover fatos do tipo resposta/2 na execução
 
 iniciar :-
     write('SISTEMA ESPECIALISTA - RECOMENDADOR DE TRILHAS'), nl,
