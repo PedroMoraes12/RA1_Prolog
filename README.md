@@ -44,7 +44,7 @@ Permitindo testes de perfis automáticos sem a necessidade de responder manualme
    - `perfil_3.pl/0` → Perfil focado em Redes e Infraestrutura  
 
 1. Copie o conteúdo de `perfil_1.pl/0` tambem para o Swish.
-2. Copie o conteúdo de `teste_perfil_design_criatividade/0` tambem para o Swish
+2. Copie o conteúdo de `perfil_2.pl/0` tambem para o Swish
 3. Copie o conteúdo de `teste_perfil_redes_infra/0` tambem para o Swish
 4. Copie o conteúdo de `testa_tudo` tambem para o Swish
    
