@@ -1,10 +1,14 @@
 %base de conhecimento feito por: Lucas Ferraz
 
+%trilhas disponiveis e a sua descrição para consultas 
+
 trilha(ciencia_de_dados, 'Analise de dados e estatistica aplicada.').
 trilha(inteligencia_artificial, 'Aprendizado de maquinas e raciocinio automatizado.').
 trilha(desenvolvimento_web,'Construcao de websites e aplicacoes web.').
 trilha(seguranca_da_informacao, 'Protecao de dados e seguranca de sistemas.').
 trilha(redes_e_infraestrutura, 'Administracao de redes e servidores.').
+
+%o perfil de cada triilha com uma habilidade que ela requer e seus peso de 1 a 5 sendo 1 pouco util e 5 muito util
 
 perfil(ciencia_de_dados, matematica_estatistica, 5).
 perfil(ciencia_de_dados, programacao, 4).
@@ -31,6 +35,8 @@ perfil(redes_e_infraestrutura, conhecimento_de_redes, 4).
 perfil(redes_e_infraestrutura, pensamento_logico, 3).
 perfil(redes_e_infraestrutura, analise_de_riscos, 2).
 perfil(redes_e_infraestrutura, programacao, 1).
+
+%questionario de perguntas com o ID, a pergunta e a habilidade que essa pergunta se refere e conta para o peso no perfil
 
 pergunta(1, 'Se da bem com matemática e/ou estatística?', matematica_estatistica).
 pergunta(2, 'Gosta de programar em alguma linguagem e possui pensamento crítico?', programacao).
