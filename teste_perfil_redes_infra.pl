@@ -1,4 +1,4 @@
-% PERFIL TESTE 3 - Pedro Henrique Moreaes
+% PERFIL TESTE 3 - Pedro Henrique Moraes
 % Perfil focado em Redes e Infraestrutura
 
 :- dynamic resposta/2.
