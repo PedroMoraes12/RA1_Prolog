@@ -2,6 +2,8 @@
 
 :- dynamic resposta/2.     % permite adicionar ou remover fatos do tipo resposta/2 na execução
 
+
+% predicado principal para iniciar o sistema
 iniciar :-
     write('SISTEMA ESPECIALISTA - RECOMENDADOR DE TRILHAS'), nl,
     write('Responda as perguntas abaixo com s (sim) ou n (nao).'), nl, nl,
