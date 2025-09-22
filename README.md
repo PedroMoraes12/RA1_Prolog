@@ -32,18 +32,25 @@ Este trabalho desenvolve um sistema especialista em Prolog que ajuda estudantes 
      
 ## **Testes Automáticos de perfis.**
    
-O arquivo `perfil_X.pl` permite testes de perfis automáticos sem a necessidade de responder manualmente.
+O sistema possui 3 arquivos de teste separados, cada um representando um perfil diferente de aluno.
+E 1 arquivo que testa todos juntos.
+Permitindo testes de perfis automáticos sem a necessidade de responder manualmente.
 **Perfis disponíveis:**
    - `teste_perfil_matematica_programacao/0` → Perfil focado em Matemática e Programação
    - `teste_perfil_design_criatividade/0` → Perfil focado em Design e Criatividade
    - `teste_perfil_redes_infra/0` → Perfil focado em Redes e Infraestrutura
+   - `testa_tudo/0` → Perfil focado em Redes e Infraestrutura
 
-1. Copie o conteúdo de `perfil_X.pl` tambem para o Swish.
-2. Caso queira testar um perfil em específico, digite no terminal o seguinte exemplo:
+1. Copie o conteúdo de `teste_perfil_matematica_programacao/0` tambem para o Swish.
+2. Copie o conteúdo de `teste_perfil_design_criatividade/0` tambem para o Swish
+3. Copie o conteúdo de `teste_perfil_redes_infra/0` tambem para o Swish
+4. Copie o conteúdo de `testa_tudo` tambem para o Swish
+   
+5. Caso queira testar um perfil em específico, digite no terminal o seguinte exemplo:
    ```prolog
    teste_perfil_matematica_programacao.
-3. E para testar todos os perfis de uma única vez utilize o seguinte comando no terminal:
+4. E para testar todos os perfis de uma única vez utilize o seguinte comando no terminal:
    ```prolog
    testa_tudo.
-4. Após isso clique em `run`.
-5. O sistema ira mostrar o ranking de trilhas sugeridas e a pontuação de cada uma.
+5. Após isso clique em `run`.
+6. O sistema ira mostrar o ranking de trilhas sugeridas e a pontuação de cada uma.
