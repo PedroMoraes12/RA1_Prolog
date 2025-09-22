@@ -9,7 +9,7 @@ iniciar :-
     write('Responda as perguntas abaixo com s (sim) ou n (nao).'), nl, nl,
     retractall(resposta(_, _)), 
     faz_perguntas,
-    recomenda(Resultados),
+    recomenda(Resultados),        % chama motor de inferência
     nl, write('RESULTADOS:'), nl,
     exibe_resultados(Resultados).   % mostra as recomendações 
 
@@ -20,7 +20,7 @@ faz_perguntas :-
     format('~w ', [Texto]),
     read(Resp),
     (Resp == s ; Resp == n),      % só vai aceitar 's' ou 'n'    
-    assertz(resposta(Id, Resp)),
+    assertz(resposta(Id, Resp)),  % salva resposta
     fail.                            
     faz_perguntas.                        
     
