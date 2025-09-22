@@ -1,4 +1,4 @@
-% PERFIL TESTE 2 - Pedro Henrique Moreaes
+% PERFIL TESTE 2 - Pedro Henrique Moraes
 % Perfil focado em Design e Criatividade
 
 :- dynamic resposta/2.
