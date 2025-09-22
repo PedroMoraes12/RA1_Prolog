@@ -1,6 +1,6 @@
 %INTERFACE DE USUÁRIO - Alan Filipe
 
-:- dynamic resposta/2.     % permite adicionar ou remover fatos do tipo resposta/2 na execução
+:- dynamic resposta/2.     % permite armazenar respostas dinamicamente 
 
 
 % predicado principal para iniciar o sistema
