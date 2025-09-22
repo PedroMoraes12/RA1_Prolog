@@ -23,7 +23,7 @@ Este trabalho desenvolve um sistema especialista em Prolog que ajuda estudantes 
 - `perfil_1.pl` → respostas simuladas para um perfil focado em matemática e programação.
 - `perfil_3.pl` → respostas simuladas para um perfil focado em redes e infraestrutura.
 
-## Como Executar
+# Como Executar
 ## **Modo interativo.**
    
   1. Abrir SWISH: [https://swish.swi-prolog.org/](https://swish.swi-prolog.org/)
