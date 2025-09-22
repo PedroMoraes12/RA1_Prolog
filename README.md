@@ -41,7 +41,7 @@ Permitindo testes de perfis automáticos sem a necessidade de responder manualme
 **Perfis disponíveis:**
    - `perfil_1.pl/0` → Perfil focado em Matemática e Programação
    - `perfil_2.pl/0` → Perfil focado em Design e Criatividade
-   - `teste_perfil_redes_infra/0` → Perfil focado em Redes e Infraestrutura  
+   - `perfil_3.pl/0` → Perfil focado em Redes e Infraestrutura  
 
 1. Copie o conteúdo de `teste_perfil_matematica_programacao/0` tambem para o Swish.
 2. Copie o conteúdo de `teste_perfil_design_criatividade/0` tambem para o Swish
